@@ -1,4 +1,6 @@
-SpringShowCase
-==============
+I want to demonstrate capabilities of Spring Framework - mainly Spring MVC. It is of course only my [pure] version of 
+https://github.com/spring-projects/spring-mvc-showcase in order to equip You with small, ready-to-implement modules.
 
-Showcase of Spring[Spring MVC mainly] capabilities 	
+You find here:
+ - example of form processing[now with .jsp as view provider]
+ - of course, simple spring configuration 
