@@ -10,6 +10,8 @@ https://github.com/spring-projects/spring-mvc-showcase in order to equip You wit
 
 
 
-</hr>
+<br/>
+<br/>
+<br/>
 <img src='http://www.jorambarrez.be/blog/wp-content/oss-logo-spring.png'>
 
