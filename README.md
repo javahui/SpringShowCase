@@ -1,6 +1,6 @@
 <h1>Spring-Show-Case</h1>
 
-I want to demonstrate capabilities of <b>Spring Framework</b> - mainly <b>Spring MVC</b>. It is of course only my [pure] version of <a href="https://github.com/spring-projects/spring-mvc-showcase" style="color:blue">Spring-show-case</a>.
+I want to demonstrate capabilities of <b>Spring Framework</b> - mainly <b>Spring MVC</b>. It is of course only my [pure] version of <a href="https://github.com/spring-projects/spring-mvc-showcase" style="color:red">Spring-show-case</a>.
 I have created it, in order to equip myself with small, ready-to-implement modules, but I will be delighted if it help you 
 also :)
 
