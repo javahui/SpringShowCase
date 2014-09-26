@@ -5,3 +5,7 @@ https://github.com/spring-projects/spring-mvc-showcase in order to equip You wit
 <h3>You find here:</h3>
  - example of form processing[now with .jsp as view provider]
  - of course, simple spring configuration 
+
+
+
+<img src='http://devrates.com/project/logo/3461'>
