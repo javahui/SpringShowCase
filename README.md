@@ -1,4 +1,4 @@
-<h1>Spring-Show-Case</h1><img src='http://devrates.com/project/logo/3461'>
+<h1><img src='http://devrates.com/project/logo/3461'>Spring-Show-Case</h1>
 
 I want to demonstrate capabilities of Spring Framework - mainly Spring MVC. It is of course only my [pure] version of 
 https://github.com/spring-projects/spring-mvc-showcase in order to equip You with small, ready-to-implement modules.
