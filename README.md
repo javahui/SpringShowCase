@@ -1,4 +1,4 @@
-<h1><img src='http://www.jorambarrez.be/blog/wp-content/oss-logo-spring.png'>Spring-Show-Case</h1>
+<h1>Spring-Show-Case</h1>
 
 I want to demonstrate capabilities of Spring Framework - mainly Spring MVC. It is of course only my [pure] version of 
 https://github.com/spring-projects/spring-mvc-showcase in order to equip You with small, ready-to-implement modules.
@@ -6,4 +6,10 @@ https://github.com/spring-projects/spring-mvc-showcase in order to equip You wit
 <h3>You find here:</h3>
  - example of form processing[now with .jsp as view provider]
  - of course, simple spring configuration 
+ 
+
+
+
+</hr>
+<img src='http://www.jorambarrez.be/blog/wp-content/oss-logo-spring.png'>
 
