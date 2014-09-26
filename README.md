@@ -13,5 +13,5 @@ https://github.com/spring-projects/spring-mvc-showcase in order to equip You wit
 <br/>
 <br/>
 <br/>
-<img src='http://www.jorambarrez.be/blog/wp-content/oss-logo-spring.png'>
+<a href="http://spring.io/"><img src='http://www.jorambarrez.be/blog/wp-content/oss-logo-spring.png'></a>
 
