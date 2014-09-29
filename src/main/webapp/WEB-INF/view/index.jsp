@@ -4,7 +4,6 @@
     Author     : Bartek
 --%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -39,17 +38,7 @@
     
         <div class="conteiner">   
             <div class="form">
-                <form:form action="/create" modelAttribute="user" method="POST"> 
-                    <form:errors path="firstname" cssClass="error" />
-                    <form:label path="firstname">Firstname</form:label>
-                    <form:input path="firstname"/>
-
-                    <form:errors path="lastname" cssClass="error" />
-                    <form:label path="lastname">Lastname</form:label>
-                    <form:input path="lastname"/>
-
-                    <input type="submit" value="Submit" />
-                </form:form>
+                <%@ include file="/WEB-INF/view/shared/form.jsp" %>
             </div>
             <c:forEach items="${users}" var="user">
                 <div class="line"><a href="/show/${user.firstname}">${user.firstname}</a></div>

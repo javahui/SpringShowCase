@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:aop="http://www.springframework.org/schema/aop"
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd 
-    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
     <context:component-scan base-package="spring.showcase" />
     <mvc:annotation-driven />
@@ -14,5 +16,22 @@
         <property name="prefix" value="/WEB-INF/view/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+    
+    
+    <!-- This is an advice for later aspect-->
+    <bean id="logger" class="spring.showcase.aop.LogUtils" >
+        <property name="type" value="SEVERE"/>
+    </bean>
+
+    <!--  Simple configuration for one aspect in Spring AOP 
+        Out pointcut here, is for "all methods in FrontController"
+    -->
+    <aop:config>
+        <aop:aspect ref="logger">
+            <aop:pointcut id="logger-point" 
+                expression="execution(* spring.showcase.form.FrontController.*(..)))"/>
+            <aop:after method="logTimeToFile" pointcut-ref="logger-point" />
+        </aop:aspect>
+    </aop:config>
 
 </beans>
