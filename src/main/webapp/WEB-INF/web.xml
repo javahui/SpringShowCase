@@ -15,7 +15,12 @@
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
-	</servlet-mapping>
-
+	</servlet-mapping>  
+        
+        <!-- when this events occur - tell me -->
+        <listener>
+            <!-- Event for ServletRequestListener-->
+            <listener-class>javaee.showcase.listeners.LoggerListener</listener-class>
+        </listener>
 
 </web-app>

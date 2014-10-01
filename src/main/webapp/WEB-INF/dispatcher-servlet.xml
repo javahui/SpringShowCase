@@ -30,7 +30,7 @@
         <aop:aspect ref="logger">
             <aop:pointcut id="logger-point" 
                 expression="execution(* spring.showcase.form.FrontController.*(..)))"/>
-            <aop:after method="logTimeToFile" pointcut-ref="logger-point" />
+            <aop:after method="logTimeToConsole" pointcut-ref="logger-point" />
         </aop:aspect>
     </aop:config>
 

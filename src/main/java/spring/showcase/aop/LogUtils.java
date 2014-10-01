@@ -27,6 +27,7 @@ import java.util.logging.Logger;
 public class LogUtils {
     
     private static final Logger LOG = Logger.getLogger(LogUtils.class.getName());
+    private Level CurrentLevelType;
     
     private final Map<String, Level> typeMap = new HashMap<>();
     {
@@ -41,17 +42,16 @@ public class LogUtils {
         typeMap.put("ALL", ALL);
     }
     
-
-    private Level CurrentLevelType;
-    
     public void setType(String type){
         CurrentLevelType = typeMap.containsKey(type)? typeMap.get(type) : OFF;
     }
     
-    public void logTimeToFile(){
-        LOG.setLevel(CurrentLevelType);
+    public void logTimeToConsole(){
         LOG.log(CurrentLevelType,
                 WrapTypeIntoVisibleString(CurrentLevelType));
+    }
+    public void LogTimeToFile(){
+        //TODO
     }
     
     //This method should return something that will be visible in console

@@ -33,8 +33,8 @@ public class FrontController {
         }
     }
     
-    /*
-    Annotation that binds a method parameter or method return value to a named 
+    /* 
+    @ModelAttribute:: Annotation that binds a method parameter or method return value to a named 
     model attribute, exposed to a web view. Supported for controller classes with
     @RequestMapping methods. 
     */
