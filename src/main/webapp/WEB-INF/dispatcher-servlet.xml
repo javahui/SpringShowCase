@@ -9,7 +9,9 @@
 
     <context:component-scan base-package="spring.showcase" />
     <mvc:annotation-driven />
-   
+    <import resource="database-context.xml"/>
+
+    
     <bean id="viewResolver"
         class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
@@ -33,5 +35,5 @@
             <aop:after method="logTimeToConsole" pointcut-ref="logger-point" />
         </aop:aspect>
     </aop:config>
-
+   
 </beans>
