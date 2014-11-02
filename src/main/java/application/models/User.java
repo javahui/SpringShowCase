@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package spring.showcase.form;
+package application.models;
 
 import java.io.Serializable;
 import javax.validation.constraints.Size;
