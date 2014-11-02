@@ -6,11 +6,10 @@ also :)
 
 <h3>You find here:</h3>
  - example of form processing[now with .jsp as view provider]
- - of course, simple spring configuration 
+ - of course, simple spring configuration
  - jpa/hibernate support
  - simple example of servlet filters
- - you will see how to return json as request result [we will handle it with javascript]
-	in other words, we provide RESTful Web Service
+ - websocket example
 
 
 
@@ -18,4 +17,5 @@ also :)
 <br/>
 <br/>
 <a href="http://spring.io/"><img src='http://www.jorambarrez.be/blog/wp-content/oss-logo-spring.png'></a>
+
 
